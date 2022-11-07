@@ -18,9 +18,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-//#include "qprint.h"
-//#include "qread.h"
-
 /* Console colors */
 #define ANSI_COLOR_RED "\x1b[31m"
 #define ANSI_COLOR_GREEN "\x1b[32m"
