@@ -255,7 +255,7 @@ void ColorPrint(char character, int color)
 
 void PrintKeyboard()
 {
-   system("cls");
+   system("clear");
    /*//CHEAT MODE FOR TESTING
    printf("Cheat: ");
    PrintRow(y_pointer);
