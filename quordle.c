@@ -3,10 +3,8 @@
 * -lupinx2
 *
 * Missing features:
-* Hard mode
 * Statistics tracker [?]
 * Share score with emojis
-* linux support (file system)
 * move the loading of the wordlist into a separate function
 * move the input  into a global variable (carefully).
 * qcheat.h - solves the current word.
@@ -255,7 +253,7 @@ void ColorPrint(char character, int color)
 
 void PrintKeyboard()
 {
-   system("clear");
+   system("clear"); //<--- replace "clear" with "cls" for windows
    /*//CHEAT MODE FOR TESTING
    printf("Cheat: ");
    PrintRow(y_pointer);
@@ -346,7 +344,7 @@ void GetUserAnswer(char *inputArray, long dictionarySize){
          attemptCount = -1;
          break;
       }
-      // print user's statses when the user enters 'scat'.
+      // print user's statses when the user enters 'stat'.
       else if (strncmp(answer, "stat", 4) == 0)
       {
          PrintStats();
